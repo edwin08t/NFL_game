@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "Run current file (project root)",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env",
+      "justMyCode": true
+    },
+    {
+      "name": "Run module: src.game_request",
+      "type": "python",
+      "request": "launch",
+      "module": "src.game_request",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env",
+      "args": ["--year", "${input:year}", "--week", "${input:week}"],
+      "justMyCode": true
+    }
+  ],
+  "inputs": [
+    { "id": "year", "type": "promptString", "description": "Season year", "default": "2024" },
+    { "id": "week", "type": "promptString", "description": "Week (1-18)", "default": "1" }
+  ]
+}

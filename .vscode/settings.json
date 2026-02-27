@@ -1,0 +1,19 @@
+{
+  "python.defaultInterpreterPath": "C:\\Users\\edwin\\anaconda3\\envs\\nfl\\python.exe",
+  "python.envFile": "${workspaceFolder}\\.env",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.extraPaths": ["${workspaceFolder}"],
+  "terminal.integrated.profiles.windows": {
+    "Conda PowerShell (nfl)": {
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": [
+        "-NoExit",
+        "-ExecutionPolicy", "Bypass",
+        "-Command",
+        "(& \"$env:USERPROFILE\\anaconda3\\condabin\\conda.bat\" shell.powershell hook) | Out-String | Invoke-Expression; conda activate nfl"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Conda PowerShell (nfl)",
+  "git.ignoreLimitWarning": true
+}
