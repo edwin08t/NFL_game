@@ -131,7 +131,7 @@ def secrets(required: Iterable[str] = ()):
     out = {}
     out.update(db_creds(required=False))
     out.update(api_keys(required=required))
-    return out
+    return out """checking for this update"""
 
 
 __all__ = ["db_creds", "api_keys", "settings", "secrets"]
