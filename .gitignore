@@ -10,4 +10,7 @@ config.yaml
 
 # OS junk
 .DS_Store
-Thumbs.db
+Thumbs.db.env
+config.yaml
+__pycache__/
+*.pyc
